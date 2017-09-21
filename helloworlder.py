@@ -1,1 +1,3 @@
-print("Hello world!")
+n = input()
+t = [4*n]
+
