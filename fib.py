@@ -1,4 +1,8 @@
-#f = [1,1,1,1,1,1]
+"""
+Fibonacci numbers algorithms
+"""
+
+
 def fib_recursive(n):
 	if n<2:
 		return 1
@@ -19,9 +23,9 @@ def fib_py(n):
 	return a
 
 
-
-# realization
-
-n = int(input())
-print(fib_py(n))
-#fib(n)
+"""
+An example of work
+"""
+if __name__ == '__main__':
+	n = int(input())
+	print(fib_py(n))

@@ -13,9 +13,9 @@ def lcm (a, b):
 """
 An example of work
 """
-
-#a=int(input("Enter first number:"))
-#b=int(input("Enter second number:"))
-#LCM=lcm(a,b)
-#print("LCM is: ")
-#print(LCM)
+if __name__ == '__main__':
+	a=int(input("Enter first number:"))
+	b=int(input("Enter second number:"))
+	LCM=lcm(a,b)
+	print("LCM is: ")
+	print(LCM)

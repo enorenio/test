@@ -19,7 +19,7 @@ def bs(lst, x):
 """
 An example of work
 """
-
-#lst = sorted([int(x) for x in input().split()])
-#x = int(input())
-#print (bs(lst,x))
+if __name__ == '__main__':
+	lst = sorted([int(x) for x in input().split()])
+	x = int(input())
+	print (bs(lst,x))

@@ -12,9 +12,9 @@ def gcd (a, b):
 """
 An example of work
 """
-
-#a=int(input("Enter first number:"))
-#b=int(input("Enter second number:"))
-#GCD=gcd(a,b)
-#print("GCD is: ")
-#print(GCD)
+if __name__ == '__main__':
+	a=int(input("Enter first number:"))
+	b=int(input("Enter second number:"))
+	GCD=gcd(a,b)
+	print("GCD is: ")
+	print(GCD)
