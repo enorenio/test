@@ -1,8 +1,13 @@
 import socket
 import json
+import configparser
+
+Config = configparser.ConfigParser()
+Config.read("config.ini")
+port = Config.get("Settings", "Port")
 
 sock = socket.socket()
-sock.bind(('', 9090))
+sock.bind(('', int(port)))
 sock.listen(1)
 conn, addr = sock.accept()
 

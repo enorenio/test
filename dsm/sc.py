@@ -9,7 +9,7 @@ os.system('cls')
 print ("----------------")
 print ("--Instructions--")
 print ("----------------")
-print ("Send my any message you want")
+print ("Send me any message you want")
 print ("To exit type \"close\"")
 
 file = open("pack/info.json")
