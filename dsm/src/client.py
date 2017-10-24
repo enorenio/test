@@ -17,5 +17,6 @@ sock.sendall(bytes(data + "\n".encode("utf-8")))
     # Receive data from the server and shut down
 received = str(sock.recv(1024).encode("utf-8"))
 
-print("Sent:     {}".format(data))
-print("Received: {}".format(received))
+# print data to console for debug
+#print("Sent:     {}".format(data))
+#print("Received: {}".format(received))
