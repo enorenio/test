@@ -1,7 +1,7 @@
-import socketserver
+import SocketServer
 import json
-import configparser
 import pymysql
+import configparser
 import os
 import sys
 
@@ -19,7 +19,7 @@ connection=pymysql.connect(host=MYSQL_HOST, port=MYSQL_PORT, user=MYSQL_USER, pa
 
 
 
-class MyTCPHandler(socketserver.BaseRequestHandler):
+class MyTCPHandler(SocketServer.BaseRequestHandler):
 
     def handle(self):
 
@@ -80,7 +80,7 @@ def daemonize (stdin='dev/null', stdout='dev/null', stderr='dev/null'):
 
 if __name__ == "__main__":
     daemonize(stdout='tmp/stdout.log', stderr='tmp/stderr.log')
-    server = socketserver.TCPServer((HOST, PORT), MyTCPHandler)
+    server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
 
     server.serve_forever()
     connection.close()
